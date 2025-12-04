@@ -41,5 +41,5 @@ export function useIaData() {
     }
   }
 
-  return { iaData, askForIaAnalysis, isLoading: req.isLoading }
+  return { iaData, askForIaAnalysis, isLoading: req.isFetching }
 }
