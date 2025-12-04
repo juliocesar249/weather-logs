@@ -83,6 +83,9 @@ SERVICE_EMAIL=go@email.com
 SERVICE_API_PASSWORD=senha_do_servico # <--
 ```
 
+>[!WARNING]
+> A senha precisa ter no minimo 6 caracteres, com maiúscula, minúscula, número e símbolo
+
 ### Configurando serviço do NestJS 🐺
 
 Antes de iniciar a configuração de fato do serviço, é necessário que possua uma chave para a API do [Groq](https://console.groq.com/keys). Ela irá prover os insights de IA da aplicação. Após criar uma conta clique em `API Keys` na barra de navegação no canto superior direito da página e em `Create API Key`, escolha um nome e copie a chave gerada.
