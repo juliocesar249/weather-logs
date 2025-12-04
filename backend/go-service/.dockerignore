@@ -1,7 +1,5 @@
 vendor/
 
-go.mod
-go.sum
 pkg/
 bin/
 
