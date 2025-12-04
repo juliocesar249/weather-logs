@@ -106,15 +106,13 @@ GROQ_API_KEY=chave_da_api_do_groq
 ```
 
 1. `MONGO_URL`: substitua `usuario` e `senha` pelos valores de `MONGO_ROOT_USERNAME` e `MONGO_ROOT_PASSWORD`, configurados anteriormente no `.env` da raiz do projeto;
-
    > `usuario` e `senha` devem estar separados por `:`, assim como na URL modelo.
-
-3. `JWT_SECRET`: crie uma chave secreta para ser usada na assinatura e autenticação de tokens JWT;
-4. `ADMIN`:
+2. `JWT_SECRET`: crie uma chave secreta para ser usada na assinatura e autenticação de tokens JWT;
+3. `ADMIN`:
    1. `NAME`: nome do admin do sistema;
    2. `EMAIL`: email do admin do sistema (será usado para logar no frontend);
    3. `PASSWORD`: senha do admin do sistema (será usada para logar no frontend);
-5. `GROQ_API_KEY`: aqui cole a chave da API do GROQ gerada, como explicado anteriormente
+4. `GROQ_API_KEY`: aqui cole a chave da API do GROQ gerada, como explicado anteriormente
 
 >[!Note]
 > A princípio não é necessária nenhuma configuração para rodar o serviço de Frontend da aplicação, contudo, caso tenha alterado a porta do serviço da API (NestJS), vá em `frontend`, nos arquivos `.env.development` e `.env.production` e altere a porta na rota da API na variável `VITE_API_URL`.
