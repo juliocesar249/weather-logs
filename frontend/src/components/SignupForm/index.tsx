@@ -42,7 +42,7 @@ export function SignupForm() {
     },
     onSuccess: ({ data }: AxiosResponse<{ success: boolean, message: string }>) => {
       toast.success(data.message)
-      setTimeout(() => navigate("/login"), 500)
+      setTimeout(() => navigate("/"), 500)
 
       queryClient.invalidateQueries({ queryKey: ["signup"] });
     },
